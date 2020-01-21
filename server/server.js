@@ -5,8 +5,8 @@ const routes = require('./db/routes')
 const server = express()
 
 server.use(express.json())
+server.use('/api/v1/posts', routes)
 server.use(express.static(path.join(__dirname, './public')))
 
-server.use('/home', routes)
 
 module.exports = server
