@@ -10,7 +10,7 @@
     "client": "webpack-dev-server --hot --inline",
     "knex": "knex --knexfile server/db/knexfile.js",
     "nodemon": "nodemon --watch server & webpack --watch",
-    "dev": "node server & webpack --watch",
+    "dev": "nodemon server & webpack --watch",
     "server": "node server",
     "start": "webpack && node server",
     "test": "jest --watchAll"
