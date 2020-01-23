@@ -2,7 +2,7 @@ const connection = require('./connection')
 
 function getPosts (db = connection) {
     return db('posts')
-      .select()
+    .select()
     }
 
 module.exports = { 

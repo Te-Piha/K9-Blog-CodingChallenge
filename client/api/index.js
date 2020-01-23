@@ -1,7 +1,7 @@
 import request from 'superagent'
 
 export function getPosts () {
-  return request.get('/api/v1/posts')
+  return request.get('/api/v1/posts/')
     .then(res => {
       const posts = res.body
       return posts
