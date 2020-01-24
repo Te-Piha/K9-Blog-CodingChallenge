@@ -7,7 +7,7 @@ export function getPosts () {
       return posts
     })
     .catch((err) => {
-      // throw Error('its not working')
-      console.error(err.message, 'not sure whats going on')
+      throw Error('its not working')
+      // console.error(err.message, 'not sure whats going on')
     })
 }

@@ -1,5 +1,5 @@
 import React from 'react'
-import Listing from 'react'
+import Listing from './Listing'
 import { getPosts } from '../api/index'
 
 class Home extends React.Component {
@@ -24,8 +24,8 @@ class Home extends React.Component {
     render () {
       return (
         <>
+    
             <div >
-              <h1> this is app </h1>
                   <Listing posts={this.state.posts}/>
             </div>
         </>

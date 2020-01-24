@@ -1,10 +1,11 @@
 import React from 'react'
 
-class User extends React.Component {
+class Post extends React.Component {
   render () {
     return (
 <>
     <br />
+
     <div>
         <p ><b>Title:</b> {this.props.post.postDescription}</p>
         <p ><b>description:</b> {this.props.post.description}</p>
@@ -13,4 +14,4 @@ class User extends React.Component {
     )
   }
 }
-export default User
+export default Post
