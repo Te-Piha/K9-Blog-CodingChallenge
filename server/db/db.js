@@ -1,10 +1,19 @@
 const connection = require('./connection')
 
 function getPosts (db = connection) {
-    return db('posts')
+  return db('posts')
     .select()
-    }
+}
 
-module.exports = { 
-    getPosts 
+function newPost (body, db = connection) {
+  return db('posts')
+    .insert({
+      postDescription: body.postDescription,
+      description: body.description
+    })
+}
+
+module.exports = {
+  getPosts,
+  newPost
 }
