@@ -1,8 +1,7 @@
 import React from 'react'
 import Listing from './Listing'
 import { getPosts } from '../api/index'
-import Button from './Button'
-import Images from './Images'
+
 
 class Home extends React.Component {
     state = {
@@ -26,10 +25,11 @@ class Home extends React.Component {
     render () {
       return (
         <>
-            <Button />
-            <Images />
             <div >
               <Listing posts={this.state.posts}/>
+            </div>
+            <div>
+              <NewPost />
             </div>
         </>
       )
